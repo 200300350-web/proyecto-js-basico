@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #14131b; /* Fondo principal oscuro */
+    color: #e6e5ea; /* Texto gris claro */
+    font-family: 'Courier New', Courier, monospace; /* Fuente de código */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo {
+    color: #817d92;
+    text-align: center;
+    font-size: 18px;
+}
+
+.caja-pantalla, .caja-controles {
+    background-color: #24232c; /* Gris oscuro para las cajas */
+    padding: 20px;
+    border-radius: 0px; /* El diseño es cuadrado */
+}
+
+.caja-pantalla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+#password-display {
+    color: #e6e5ea;
+}
+
+.btn-icono {
+    background: none;
+    border: none;
+    color: #a4ffaf; /* Verde neón */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.control-longitud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.texto-verde {
+    color: #a4ffaf;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo del Slider */
+input[type=range] {
+    width: 100%;
+    margin-bottom: 25px;
+    cursor: pointer;
+    accent-color: #a4ffaf; /* Pinta la barra de verde */
+}
+
+/* Opciones (Checkboxes) */
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    accent-color: #a4ffaf;
+}
+
+.btn-principal {
+    width: 100%;
+    background-color: #a4ffaf;
+    color: #24232c;
+    border: none;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: transparent;
+    border: 2px solid #a4ffaf;
+    color: #a4ffaf;
+}
